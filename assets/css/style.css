@@ -12,9 +12,15 @@ body {
 
 header {
   width: 50%;
-  padding-top: 100px;
+  height: 100vh;
   padding-left: 200px;
   position: fixed;
+  display: flex;
+  align-items: center;
+}
+header .box-header {
+  height: -moz-max-content;
+  height: max-content;
 }
 header .name {
   font-size: 50px;
@@ -79,7 +85,10 @@ main {
 
 section {
   width: 100%;
-  padding: 150px 100px 50px 0;
+  padding: 0 100px 50px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #skill .container {
@@ -180,4 +189,65 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+  header {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 50px;
+    position: initial;
+    display: flex;
+    justify-content: center;
+  }
+  header .box-header {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .role {
+    display: none;
+  }
+  header .dsc {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  header .box-contact {
+    display: none;
+  }
+  main {
+    width: 90%;
+    margin-left: 5%;
+  }
+  section {
+    width: 100%;
+    padding: 50px 0;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+  }
+  #skill .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skill .item-skill {
+    width: 30vw;
+    height: 30vw;
+    margin: 0;
+    border-radius: 100vw;
+  }
+  #experience .item-exp {
+    width: 100%;
+  }
+  #experience .item-exp img {
+    width: 75vw;
+    height: 30vw;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

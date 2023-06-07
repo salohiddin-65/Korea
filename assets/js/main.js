@@ -21,19 +21,20 @@ window.addEventListener('scroll', function() {
 	var element3 = document.querySelector('#experience');
 	var position3 = element3.getBoundingClientRect();
 console.log(position1.bottom);
+console.log(window.innerHeight / 2);
 	if(position1.bottom > this.window.innerHeight / 2) {
         for(let j = 0; j < navitemlist.length; j++){
             navitemlist[j].classList.remove("navitem-active");
         }
         navitemlist[0].classList.add("navitem-active");
 	}
-	else if(position2.top >= 0 && position2.bottom <= window.innerHeight) {
+	else if(position2.bottom > this.window.innerHeight / 2) {
         for(let j = 0; j < navitemlist.length; j++){
             navitemlist[j].classList.remove("navitem-active");
         }
         navitemlist[1].classList.add("navitem-active");
 	}
-	else if(position2.bottom < 0) {
+	else {
         for(let j = 0; j < navitemlist.length; j++){
             navitemlist[j].classList.remove("navitem-active");
         }
