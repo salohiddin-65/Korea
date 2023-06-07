@@ -89,3 +89,30 @@ section {
     width: 100%;
     padding: 150px 100px 50px 0;
 }
+
+#skill {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-skill {
+        width: 7.5vw;
+        height: 7.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7.5vw;
+        cursor: pointer;
+        &:hover {
+            transform: rotate(360deg);
+            box-shadow: 0 0 10px #fff;
+        }
+
+        img {
+            display: block;
+            width: 50%;
+            object-fit: cover;
+        }
+    }
+}
