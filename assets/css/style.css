@@ -3,6 +3,7 @@ html {
   font-family: "Noto Sans JP", sans-serif;
   background-image: linear-gradient(to right, #112, #123);
   color: white;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +32,8 @@ header nav .navitem {
   opacity: 0.5;
   cursor: pointer;
   margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
 }
 header nav .navitem:hover {
   opacity: 1;
@@ -85,23 +88,83 @@ section {
   flex-wrap: wrap;
 }
 #skill .item-skill {
-  width: 7.5vw;
-  height: 7.5vw;
+  width: 7vw;
+  height: 7vw;
+  margin: 0.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 7.5vw;
   cursor: pointer;
+  position: relative;
+}
+#skill .item-skill::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 10px #18ffd8;
+  border-radius: 100%;
+  display: none;
 }
 #skill .item-skill:hover {
   transform: rotate(360deg);
-  box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #00c3ff;
+}
+#skill .item-skill:hover::before {
+  display: block;
 }
 #skill .item-skill img {
   display: block;
   width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#experience .item-exp {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#experience .item-exp:hover {
+  box-shadow: 0 0 10px #18ffd8;
+}
+#experience .item-exp .date {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#experience .item-exp .ttl {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#experience .item-exp img {
+  width: 30vw;
+  height: 12.5vw;
+  margin-bottom: 20px;
+}
+#experience .item-exp .row {
+  display: flex;
+  margin-bottom: 10px;
+}
+#experience .item-exp .row span {
+  border: 1px solid rgba(24, 255, 216, 0.5333333333);
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: rgba(24, 255, 216, 0.5333333333);
+  color: black;
+  cursor: pointer;
+}
+#experience .item-exp .row span:hover {
+  color: white;
+  background-color: transparent;
+}
+#experience .item-exp .txt {
+  margin-top: 25px;
 }
 
 *, *:before, *:after {
