@@ -1,0 +1,91 @@
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: linear-gradient(to right, #112, #123);
+    color: white;
+}
+
+body {
+    display: flex;
+}
+
+header {
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 200px;
+    position: fixed;
+
+    .name {
+        font-size: 50px;
+    }
+    
+    .role {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    nav {
+        margin-top: 50px;
+    
+        .navitem {
+            display: flex;
+            align-items: center;
+            opacity: .5;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &::before {
+                content: '';
+                width: 25px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: white;
+                margin-right: 10px;
+            }
+        }
+        
+        .navitem-active {
+            opacity: 1;
+            
+            &::before {
+                width: 75px;
+            }
+        }
+    }
+        
+    .box-contact {
+        display: flex;
+        margin-top: 100px;
+
+        .item-contact {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            &:hover {
+                transform: scale(1.25);
+            }
+        }
+    }
+}
+
+main {
+    width: 50%;
+    margin-left: 50%;
+}
+
+section {
+    width: 100%;
+    padding: 150px 100px 50px 0;
+}
