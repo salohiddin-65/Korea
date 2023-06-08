@@ -11,9 +11,15 @@ body {
 
 header {
     width: 50%;
-    padding-top: 100px;
+    height: 100vh;
     padding-left: 200px;
     position: fixed;
+    display: flex;
+    align-items: center;
+
+    .box-header {
+        height: max-content;
+    }
 
     .name {
         font-size: 50px;
@@ -90,7 +96,10 @@ main {
 
 section {
     width: 100%;
-    padding: 150px 100px 50px 0;
+    padding: 0 100px 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #skill {

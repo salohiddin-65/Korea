@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        height: max-content;
+        padding: 50px;
+        position: initial;
+        display: flex;
+        justify-content: center;
+
+        .box-header {
+            height: max-content;
+        }
+
+        .role {
+            display: none;
+        }
+
+        .dsc {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .box-contact {
+            display: none;
+        }
+    }
+
+    main {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    section {
+        width: 100%;
+        padding: 50px 0;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #skill {
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item-skill {
+            width: 30vw;
+            height: 30vw;
+            margin: 0;
+            border-radius: 100vw;
+        }
+    }
+
+    #experience {
+        .item-exp {
+            width: 100%;
+
+            img {
+                width: 75vw;
+                height: 30vw;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
