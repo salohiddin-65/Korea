@@ -49,7 +49,7 @@ header nav .navitem::before {
   width: 25px;
   height: 3px;
   border-radius: 3px;
-  background-color: white;
+  background-image: linear-gradient(to right, #112, #fff);
   margin-right: 10px;
 }
 header nav .navitem-active {
