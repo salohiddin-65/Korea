@@ -75,7 +75,25 @@ header .box-contact .item-contact img {
   display: block;
 }
 header .box-contact .item-contact:hover {
-  transform: scale(1.25);
+  animation: anim_navitem 1s;
+}
+@keyframes anim_navitem {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  33% {
+    scale: 0.5;
+    opacity: 1;
+  }
+  66% {
+    scale: 1.5;
+    opacity: 0.1;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 main {
