@@ -135,7 +135,7 @@ section {
   display: none;
 }
 #skill .item-skill:hover {
-  transform: rotate(360deg);
+  transform: scale(1.1);
   box-shadow: 0 0 10px #00c3ff;
 }
 #skill .item-skill:hover::before {
