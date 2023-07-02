@@ -1,7 +1,4 @@
-# Portfolio
-![244112035-ea55df4e-7079-44b9-b005-52e4d3688428](https://github.com/PurpleMonkey729/portfolio/assets/126082098/43b4b394-5119-435f-99e8-7224f6386d8b)
-
-## How am I?
+## Who am I?
 
 ```
 var name = "Yoshimura Hiroki";
