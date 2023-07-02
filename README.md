@@ -1,7 +1,7 @@
 ## Who am I?
 
 ```
-var name = "Yoshimura Hiroki";
+var name = "Hiroki Yoshimura";
 var nation = "Japan";
 var hobby = "Development";
 
